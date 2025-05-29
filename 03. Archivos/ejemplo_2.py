@@ -16,7 +16,7 @@ if len(filename) < 1:
 
 try:
     # 2. Abre el archivo
-    with open("03. Archivos/" + filename, 'r') as file:
+    with open("Python-para-todos/03. Archivos/" + filename, 'r') as file:
         
         total = 0.0            # Acumula los de valores 
         contador = 0           # Contador de lineas 

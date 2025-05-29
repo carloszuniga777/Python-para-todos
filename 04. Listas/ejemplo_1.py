@@ -18,7 +18,7 @@ if len(filename) < 1:
 try:
 
     #2. Abre el archivo
-    with open(f"04. Listas/{filename}", 'r') as file:
+    with open(f"Python-para-todos/04. Listas/{filename}", 'r') as file:
         
         lista_palabras = list()      #Lista
 

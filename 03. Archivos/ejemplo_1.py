@@ -14,7 +14,7 @@ if len(nameFile) < 1:
 
 try:
     #2. Abriendo el archivo
-    with open("03. Archivos/" + nameFile, 'r') as file:
+    with open("Python-para-todos/03. Archivos/" + nameFile, 'r') as file:
         
         #3 leyendo el archivo
         for linea in file:

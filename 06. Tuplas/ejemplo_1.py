@@ -18,7 +18,7 @@ if len(filename) < 1:
 
 try:
     # 2. Abrir el archivo en modo de Lectura
-    with open(f"06. Tuplas/{filename}", 'r')  as file:
+    with open(f"Python-para-todos/06. Tuplas/{filename}", 'r')  as file:
 
         diccionario_horas = dict()
 

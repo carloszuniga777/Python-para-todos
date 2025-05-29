@@ -17,7 +17,7 @@ if len(filename) < 1:
 
 try:
     # 2. Abrir el archivo en modo de Lectura
-    with open(f"05. Diccionarios/{filename}", 'r')  as file:
+    with open(f"Python-para-todos/05. Diccionarios/{filename}", 'r')  as file:
 
         diccionario_correo = dict()  # Diccionario para almacenar correos y sus conteos
 
