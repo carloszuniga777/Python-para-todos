@@ -1,10 +1,13 @@
 
 
-import re
-s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
-lst = re.findall('\\S+@\\S+', s)
-print(lst)
+import urllib.request, urllib.parse, urllib.error
 
+fhand = urllib.request.urlopen("http://data.pr4e.org/romeo.txt")
+
+print(fhand)
+
+#for line in fhand:
+ #   print(line.decode().strip())
 
 
 
