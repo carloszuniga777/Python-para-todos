@@ -9,8 +9,8 @@
 # http://www.py4e.com/code3/bs4.zip
 # and unzip it in the same directory as this file
 
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
+from urllib.request import urlopen  # Para obtener datos de una URL
+from bs4 import BeautifulSoup       # Para analizar el HTML y hacer web scraping
 import ssl
 
 # Ignore SSL certificate errors

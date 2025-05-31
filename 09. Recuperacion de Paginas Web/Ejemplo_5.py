@@ -1,5 +1,5 @@
-import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup
+import urllib.request, urllib.parse, urllib.error   # Para obtener datos de una URL
+from bs4 import BeautifulSoup                       # Para analizar el HTML y hacer web scraping
 import ssl
 
 # Ingnorar SSL certificados de error
@@ -7,6 +7,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
+# Solicitar al usuario una URL a analizar
 url = input('Ingrese URL: ')
 if len(url) < 1:
     url = 'https://www.py4e.com/materials'  # URL por defecto si no se ingresa ninguna
