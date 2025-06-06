@@ -44,6 +44,6 @@ try:
         #print(numero)
     
 except FileNotFoundError:
-    print(f"Error: '{nameFile}' no existe en el directorio actual.")
+    print(f"Error: '{filename}' no existe en el directorio actual.")
 except Exception as e:
     print(f"Error inesperado: {e}")

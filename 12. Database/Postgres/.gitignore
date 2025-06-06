@@ -1,0 +1,104 @@
+### Entornos virtuales ###
+# Entornos virtuales comunes
+venv/
+env/
+.venv/
+venv*/
+env*/
+.venv*/
+
+# Pipenv
+.python-version
+
+# Pipenv y virtualenv (archivos de entorno)
+Pipfile.lock
+.venv
+
+### Archivos generados por Python ###
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de distribución/instalación
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Archivos de caché de pruebas
+.pytest_cache/
+.tox/
+coverage.xml
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+### Archivos de configuración/secrets ###
+# Archivos de entorno
+.env
+.secrets
+.env.local
+.env.*.local
+
+# Configuración sensible
+config_*.py
+settings/local.py
+
+### Archivos de IDE/Sistemas ###
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-*
+
+# Otros editores
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+### Logs y bases de datos ###
+*.log
+logs/
+*.sqlite3
+*.db
+*.db-journal
+
+### Archivos generados por el usuario ###
+# Archivos de datos temporales
+*.tmp
+*.temp
+
+# Archivos de almacenamiento local
+storage/
+*.pickle
+*.pkl
+
+### Paquetes y dependencias ###
+# Pip
+pip-selfcheck.json
+
+# mypy
+.mypy_cache/
