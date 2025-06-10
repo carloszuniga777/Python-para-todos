@@ -3,7 +3,7 @@
 # Realiza un conteo de cuántas veces aparece cada dirección de correo electrónico en el archivo
 # y almacena el correo junto con su cantidad en la tabla "Counts" de la base de datos
 
-
+import os
 from conexion import get_connection #Conexion.py
 
 
@@ -26,8 +26,20 @@ try:
             filename = input('Ingresar el nombre del archivo: ')
             if(len(filename) < 1): filename = 'mbox-short.txt'
 
+            #--------- Contruir la ruta del archivo--------------- 
+            
+            # Obtiene la ruta del directorio actual del script
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+
+            # Construye la ruta al archivo independientemente de dónde se abra el proyecto
+            file_path = os.path.join(current_dir, "..", "..", "archivos", filename)                       ## Subir solo 2 niveles (.. + ..)
+            file_path = os.path.abspath(file_path)
+
+            #------------------------------------------------------
+
+
             # Abre el archivo
-            with open("Python-para-todos/12. Database/" + filename, 'r') as file:
+            with open(file_path, 'r') as file:
                 
                 # Itera en cada linea del archivo
                 for line in file:

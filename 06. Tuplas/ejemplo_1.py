@@ -10,15 +10,28 @@
 # Una vez acumulados los conteos por hora, 
 # imprime los resultados ordenados por hora como se muestra abajo.
 
+import os
 
 # 1. Solicitar al usuario el nombrel del archivo a procesar: mbox-short.txt
 filename = input("Ingresar el nombre del archivo:")
 if len(filename) < 1:
     filename = "mbox-short.txt"
 
+#--------- Contruir la ruta del archivo--------------- 
+
+# Obtiene la ruta del directorio actual del script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construye la ruta al archivo independientemente de dónde se abra el proyecto
+file_path = os.path.join(current_dir, filename)                       
+file_path = os.path.abspath(file_path)
+
+#------------------------------------------------------    
+
+
 try:
     # 2. Abrir el archivo en modo de Lectura
-    with open(f"Python-para-todos/06. Tuplas/{filename}", 'r')  as file:
+    with open(file_path, 'r')  as file:
 
         diccionario_horas = dict()
 

@@ -9,16 +9,30 @@
 # 
 # Puedes descargar los datos de ejemplo en: http://www.py4e.com/code3/romeo.txt.
 
+import os
+
 #. 1. Ingresa el nombre del archivo: romeo.txt'
 filename = input("Ingrese nombre del archivo: ")
 
 if len(filename) < 1:
     filename = 'romeo.txt'
 
+
+#--------- Contruir la ruta del archivo--------------- 
+
+# Obtiene la ruta del directorio actual del script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construye la ruta al archivo independientemente de dónde se abra el proyecto
+file_path = os.path.join(current_dir, filename)                       
+file_path = os.path.abspath(file_path)
+
+#------------------------------------------------------        
+
 try:
 
     #2. Abre el archivo
-    with open(f"Python-para-todos/04. Listas/{filename}", 'r') as file:
+    with open(file_path, 'r') as file:
         
         lista_palabras = list()      #Lista
 
