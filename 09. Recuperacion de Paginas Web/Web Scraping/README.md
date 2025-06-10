@@ -52,6 +52,8 @@ pip install -r requirements.txt
 ---
 
 ## 🗂️ Estructura del proyecto
+
+```
 Web Scrapiing
 ├── src/          # Carpeta con los ejercicios
 │   ├── ejercicio1.py
@@ -60,7 +62,7 @@ Web Scrapiing
 ├── venv/               # Entorno virtual (se crea con python -m venv)
 ├── requirements.txt    # Dependencias del proyecto
 └── README.md           # Este archivo
-
+```
 
 ### ▶️ Ejecutar ejercicios
 - 1. Activa tu entorno virtual
